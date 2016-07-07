@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66e1dddd"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".legacy.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+        <Button android:id="@+id/continue_guest"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:visibility="visible"
+            android:text="Guest"
+            android:textAlignment="center"
+            android:onClick="loadGuest"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:gravity="right|center_vertical"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/img2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

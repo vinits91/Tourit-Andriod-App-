@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66e1dddd"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".legacy.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true" />
+
+        <Button android:id="@+id/continue_guest"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            android:text="Guest"
+            android:onClick="loadGuest"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:gravity="right|center_vertical"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/img2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AttrDescription"
+    android:background="#66e1dddd"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView android:id="@+id/Des_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#666666"
+        android:layout_margin="1dp"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Chicago Bean" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/Des_webView"
+        android:layout_weight="0.45"
+        android:layout_marginTop="5dp"
+        android:paddingTop="40dp" />
+
+    <TextView
+        android:id="@+id/descTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#666666"
+        android:text="Description"
+        android:textSize="18dp"/>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fillViewport="false">
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+
+            android:layout_weight="0.30"
+            android:autoText="false" />
+
+    </ScrollView>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="GET DIRECTIONS"
+        android:textColor="#000000"
+        android:id="@+id/route"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/des"
+        android:layout_gravity="bottom|right" />
+
+</LinearLayout>

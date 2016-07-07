@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_id": "tourit-1274",
+    "project_number": "427554355371",
+    "name": "TourIt"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427554355371:android:2de623a3f581f979",
+        "client_id": "android:phonebook.vinitshah.com.tourit",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "phonebook.vinitshah.com.tourit",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "427554355371-vkhfp5d18647pvcapp5ge7se7crt72ag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "phonebook.vinitshah.com.tourit",
+            "certificate_hash": "2DB20D111998660D5668FC7033E84FB9221CF6BB"
+          }
+        },
+        {
+          "client_id": "427554355371-jkidvu69kgfu8lfbmpotitpii7i5k4g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

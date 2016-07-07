@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66e1dddd"
+    tools:context="Fragments.DescriptionFragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66e1dddd"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#66e1dddd"
+            android:orientation="vertical"
+            >
+            <TextView android:id="@+id/Des_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:layout_margin="1dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Chicago Bean" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/Des_webView"
+                android:layout_weight="0.45"
+                android:layout_marginTop="5dp"
+                android:paddingTop="40dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/descTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:text="Overview:"
+                android:textSize="20dp"/>
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="100dp">
+                <TextView
+                    android:id="@+id/des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:padding="4dp"
+                    android:textColor="#000"
+                    android:text="Cloud Gate is a public sculpture by Indian-born British artist Anish Kapoor, of AT&amp;T Plaza at Millennium Park."
+                    />
+            </ScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GET DIRECTIONS"
+                android:textColor="#000000"
+                android:background="@color/colorPrimary"
+                android:id="@+id/route"
+                android:layout_gravity="bottom|right" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
